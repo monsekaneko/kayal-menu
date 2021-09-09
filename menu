@@ -31,6 +31,8 @@ if(newElements.length>0){
 	for(const elements of newElements){
 		for(const subElements of elements){
             		subElements.style.width = "100%"
+			subElements.style.overflow = "visible"
+			subElements.style.margin = "0"
 			let temp= imageElement.cloneNode(true)
 			temp.style.display= "inline-block"
 			temp.style.height= "32px"
