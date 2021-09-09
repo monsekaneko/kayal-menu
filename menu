@@ -29,8 +29,8 @@ for(const elements of searchedElement){
 }
 if(newElements.length>0){
 	for(const elements of newElements){
-      //elements.style.width="100%"
 		for(const subElements of elements){
+            		subElements.style.width = "100%"
 			let temp= imageElement.cloneNode(true)
 			temp.style.display= "inline-block"
 			temp.style.height= "32px"
@@ -45,7 +45,7 @@ if(newElements.length>0){
 			tempSpan.style.display= "inline-block"
 			tempSpan.style.bottom= "11px"
 
-	}
+	    }
       
 	}
 }
