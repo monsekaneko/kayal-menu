@@ -25,6 +25,7 @@ let imageElement= document.createElement('div')
 for(const elements of searchedElement){
 	if(elements.innerText.indexOf("Kayal Specialties Center")!==-1 && elements.parentElement.parentElement.parentElement.className.indexOf("header__burger_3P8") !== 0){
 		newElements.push(elements.getElementsByTagName("div")[0].children[0].children)
+		elements.getElementsByTagName("div")[0].children[0].style.overflow = "hidden"
 	}
 }
 if(newElements.length>0){
@@ -33,6 +34,7 @@ if(newElements.length>0){
             		subElements.style.width = "100%"
 			subElements.style.overflow = "visible"
 			subElements.style.margin = "0"
+			subElements.style.marginBottom = "5px"
 			let temp= imageElement.cloneNode(true)
 			temp.style.display= "inline-block"
 			temp.style.height= "32px"
